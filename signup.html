@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/17152ac400.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			background: url(picture/background2.jpg) no-repeat;
+			background-size: cover;
+		}
+		.container{
+			display: flex;
+			flex-flow: column;
+			position: absolute;
+			background-color: white;
+			opacity: 0.8;
+			top: 0;
+			left: 40%;
+			border-radius: 20px;
+			box-shadow: 10px 10px 10px black;
+		}
+		h1{
+			margin: 30px;
+			color: blue;
+			align-self: center;
+		}
+		.textbox{
+			color:black;
+			outline: none;
+			background: none;
+			font-family: Times;
+			font-size: 25px;
+			border-radius: 20px;
+			margin: 10px;
+			
+		}
+		i{
+			color: blue;
+		}
+		button{
+			position: relative;
+			height: 40px;
+			width: 50%;
+			left: 25%;
+			border-radius: 20px;
+			text-transform: uppercase;
+			outline: none;
+			background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+			transition: 0.5s;
+			font-family: Times;
+			color:white;
+			background-size: 200% auto;
+		}
+		button:hover{
+			background-position: left; /* change the direction of the change here */
+            color: black;
+            text-decoration: none;
+		}
+		.text{
+			align-self: center;
+			text-decoration: none;
+			margin-top: 10px;
+		}
+		a{
+			text-decoration: none;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1> 
+			<i class="fas fa-user-plus" ></i>
+			Sign Up
+		 </h1>
+		 <form method="post" action="#" validate >
+		 <div>
+		 	<i class="fas fa-user" ></i>
+		 	<input class="textbox" type="text"  placeholder="Name" name="name" minlength="5">
+		 	<hr>
+		 </div>
+		  <div>
+		 	<i class="fas fa-id-card"></i>
+		 	<input class="textbox" type="text"  placeholder="Student ID" name="sid">
+		 	<hr>
+		 </div>
+		 <div>
+		 	<i class="fas fa-envelope-open-text"></i>
+		 	<input class="textbox" type="email"  placeholder="Email" name="email">
+		 	<hr>
+		 </div>
+		 <div>
+		 	<i class="fas fa-map-marker"></i>
+		 	<input class="textbox" type="text"  placeholder="Address" name="address">
+		 	<hr>
+		 </div>
+		 <div>
+		 	<i class="fas fa-phone"></i>
+		 	<input class="textbox" type="tel"  placeholder="Phone number" name="phone" minlength="10">
+		 	<hr>
+		 </div>
+		  <div>
+		 	<i class="fas fa-user-circle"></i>
+		 	<input class="textbox" type="text"  placeholder="Username" name="Uname" minlength="5">
+		 	<hr>
+		 </div>
+		 <div>
+		 	<i class="fas fa-key"></i>
+		 	<input class="textbox" type="password"  placeholder="Password" name="password" minlength="6">
+		 	<hr>
+		 </div>
+		 <button type="submit" name="submit" > Create account</button>
+		 </form>
+		 
+		 <div class="text">
+		 	Already have an account?
+		 	<a href="login.php">Sign in</a>
+		 </div>
+	</div>
+</body>
+</html>

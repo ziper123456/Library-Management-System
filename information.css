@@ -1,0 +1,27 @@
+.pic{
+	float:left;
+	margin: 0;
+	width: 200px;
+	height: 500px;
+}
+.pic i{
+	font-size: 200px;
+}
+.info
+{
+	float: right;
+	width: 500px;
+	margin: 0 200px;
+}
+.info h1{
+	color: red;
+	text-align: center;
+	background-color: lightblue;
+}
+.info h2{
+	color: grey;
+	text-align: center;
+}
+.info p{
+	font-size: 20px;
+}

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://kit.fontawesome.com/17152ac400.js" crossorigin="anonymous"></script>
+	<script src="jQuery/jquery-3.5.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="searchpage.css">
+</head>
+<body>
+	<section>
+		<div class="result"> 
+			<div class="result-section" >
+				<img src= <?php echo $row3['imagelink']; ?> alt="picture">
+				<div class="information">
+					<h1><?php echo $row2['Title'];?> 
+					 </h1> 
+					<p> by </p> 
+				</div>
+				<a href="Bookinfo.php?title=<?php echo $row2['Title'];?>"> <button  type="submit" name="submit" >  View </button></a> 	
+			</div>
+		</div>
+	</section>
+</body>
+</html>

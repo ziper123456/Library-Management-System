@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="picture/logo.jpg" alt="logo" >
+			</div>
+			<ul class="menu">
+				<li>
+					<?php if(isset($_SESSION['id'])){
+						echo "<a href='home.php'><b>Home</b></a> ";
+						} 
+					 	else{
+				 			echo "<a href='web.php'><b>Home</b></a>";
+						}
+					?>
+				</li>
+				<li > 
+					<a href="#"><b>Service</b></a> 
+					<div class="service-dropdown">
+						<a href="#"> Borrow </a>
+						<a href="#"> Room reservation</a>
+						<a href="#"> Openning hour</a>
+						<a href="#"> Online resources</a>
+					</div>
+				</li>
+				<li> 
+					<a href="#"><b>Account</b></a> 
+					<div class="service-dropdown">
+						<?php if(isset($_SESSION['id'])){
+						echo "<a href='#'>Information</a>
+							<a href='#'> Borrow records</a> ";
+						} 
+					 	else{
+				 			echo "<a href='#'>Information</a>
+								<a href='#'> Borrow records</a>";
+						}
+					?>
+						
+					</div>
+				</li>
+				<li> <a href="about.html"><b>About</b></a> </li>
+			</ul>
+	</header>
+</body>
+</html>

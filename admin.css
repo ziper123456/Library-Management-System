@@ -1,0 +1,187 @@
+.container{
+	background-color: rgb(192,0,0);
+}
+
+.logo{
+	margin: 100px;
+}
+.logo img{
+	width: 200px;
+	height: 150px;
+}
+.logout{
+	float: right;
+
+	margin: 50px 100px;
+}
+.logout button{
+	width: 200px;
+	height: 50px;
+	border: solid black;
+	outline: none;
+	color: white;
+	font-size: 20px;
+	background-color: blue;
+	border-radius: 50px;
+	transition-duration: 0.5s;
+}
+.logout button:hover{
+	background-color: white;
+	border: solid white;
+	color:blue;
+}
+.menu{
+	position: relative;
+	background-color: rgb(0,0,100);
+	display: block;
+	padding: 20px 350px;
+}
+
+.menu li{
+	position: relative;
+	display: inline;
+	margin: 0 30px;
+}
+.menu a{
+	color: lightgrey;
+	text-decoration: none;
+	font-family: serif,Times,"Times New Roman";
+	font-size: 22px;
+}
+
+.service-dropdown {
+	display: none;
+	border:1px solid;
+	position: absolute;
+	background-color: white;
+	width: 200%;
+	left: 0;
+	z-index: 1;
+}
+
+.service-dropdown a{
+	font-size: 17px;
+	
+	color: black;
+	display: block;
+	padding: 12px 16px;
+	text-decoration: none;
+}
+.service-dropdown a:hover{
+	background-color:lightgrey;
+	text-decoration: none;
+}
+.add-service{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border:solid;
+	background-color: white;
+	z-index: 1;
+}
+.menu :hover .service-dropdown{
+	display: block;
+}
+
+.menu a:hover{
+	text-decoration: underline;
+}
+.dashboard{
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: lightgrey;
+}
+
+article{
+	position: relative;
+	border:1px solid black;
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+}
+section{
+	position: absolute;
+	width: 100%;
+	height:100%	;
+}
+
+.dashboard{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.addbook{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.display-block{
+	display: inline-block;
+	position: relative;
+	background-color: tomato;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	border:1px solid;
+	width: 300px;
+	height: 200px;
+	z-index: 1;
+}
+.display-block i{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 100px;
+	opacity: 0.5;
+}
+.display-block h1{
+	font-size: 50px;
+	margin: 20px 50px;
+}
+.more-info a{
+	text-decoration: underline;
+}
+.icon{
+	position: absolute;
+	left: 0;
+	font-size: 100px;
+	color: lightgrey;
+	transform: translate(400px,-65px);
+}
+.more-info{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+}
+.more-info a{
+	text-decoration: none;
+	margin: 0 100px;
+}
+.more-info i{
+	font-size: 20px;
+	opacity: 1;
+	margin: 0 100px;
+}
+.request{
+	position: absolute;
+	background-color: tan;
+	width: 100%;
+	height: 100%;
+}
+.request i{
+	position: relative;
+	font-size: 100px;
+	transform: translate(850px,-65px);
+	color: tan;
+}
+table{
+	margin: 0 150px;
+}
+table, th,td{
+	border:1px solid;
+	padding: 20px 50px;
+	border-collapse: collapse;
+}

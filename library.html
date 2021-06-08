@@ -1,0 +1,144 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/17152ac400.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width,initial-scale=1.0">
+	<title>IU library</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="picture/logo.jpg" alt="logo" >
+			</div>
+			<ul class="menu">
+				<li> <a href="#"><b>Home</b></a> </li>
+				<li > 
+					<a href="#"><b>Service</b></a> 
+					<div class="service-dropdown">
+						<a href="about.html"> Borrow </a>
+						<a href="about.html"> Room reservation</a>
+						<a href="about.html"> Openning hour</a>
+						<a href="#"> Online resources</a>
+					</div>
+				</li>
+				<li> 
+					<a href="#"><b>Account</b></a> 
+					<div class="service-dropdown">
+						<a href="login.php"> Login </a>
+						<a href="Signup.php"> Sign up</a>
+					</div>
+				</li>
+				<li> <a href="about.html"><b>About</b></a> </li>
+			</ul>
+			<div class="account-area"> <i class="fas fa-user-circle"></i> Welcome,Guest </div>
+		</div>
+	</header>
+	<div class="back-ground">
+		<img src="picture/dh.jpg">
+	</div>
+	<form>
+		<fieldset class="search-area" >
+			<legend> Search for Material </legend>
+			<hr >
+			<form method="get">
+				<input type="text" name="keyword" autocomplete="off">
+  				<button type="submit" formmethod="get"><i class="fas fa-search"></i></button>
+			</form>
+  			
+		</fieldset>
+	</form>
+	<section>
+		<h1 style="font-size: 40px">Category</h1>
+		<div class="category">
+			<div class="content">
+				<img src="picture/ise.jpg">
+				<h2>
+					<a href="booklist.php?id=5" > <?php echo $category['5'] ?> </a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/math.png">
+				<h2>
+					<a href="booklist.php?id=7" > <?php echo $category['7'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/it.jpg">
+				<h2>
+					<a href="booklist.php?id=6" > <?php echo $category['6'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/english.jpg" style="border: solid pink;">
+				<h2>
+					<a href="booklist.php?id=4" > <?php echo $category['4'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/physics.png">
+				<h2>
+					<a href="booklist.php?id=8" > <?php echo $category['8'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/ee.jfif">
+				<h2>
+					<a href="booklist.php?id=3" > <?php echo $category['3'] ?> </a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/ce.jfif">
+				<h2>
+					<a href="booklist.php?id=2" > <?php echo $category['2'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/ba.jfif">
+				<h2>
+					<a href="booklist.php?id=0" > <?php echo $category['0'] ?></a>
+				</h2>
+			</div>
+			<div class="content">
+				<img src="picture/bt.jpeg">
+				<h2>
+					<a href="booklist.php?id=1" > <?php echo $category['1'] ?></a>
+				</h2>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container2">
+			<div class="info-area">
+				<div>
+					<h3>
+						Openning hour
+					</h3>
+					<hr>
+					<p> Mon-Fri: 8:00 am - 5:30 pm </p>
+					<p>	Sat: 8:00 am - 4:00 pm </p>
+					</div>
+				<div >
+					<h3>
+						Stay connected
+					</h3>
+					<hr>
+					<p> Lib Face </p>
+					<p>	VNU central library </p>
+				</div>
+				<div >
+					<h3>
+						Contact
+					</h3>
+					<hr>
+					<p>  Phone: 08 3724 4270 - 3241 </p>
+					<p>	 Email: library@hcmiu.edu.vn </p>
+					<p>	 Ward 6, Linh Trung, Thu Duc, HCMC</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
